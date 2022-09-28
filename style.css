@@ -1,0 +1,101 @@
+body {
+    background-color: purple;
+}
+
+h3 {
+    margin-left: 40%;
+    margin-top: 20%;
+    color: white;
+}
+
+
+/* Code for mobile screen nav-bar */
+.bars{
+    display: none;
+    color: white;
+    margin: 0; 
+    margin-right: 5%;
+   
+}
+
+.bars i {
+    font-size: 2rem;
+} 
+
+.dropdown-list {
+    z-index: 1;
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+} 
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%; 
+}
+
+.dropdown-list:hover .nav-menu {
+    display: block;
+    border: solid 2px red;
+}
+
+.no-list-style {
+    list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-weight: 0.9rem;
+}
+
+.no-list-style li a {
+    color: white;
+    text-decoration: none;
+}
+.no-list-style li a:hover {
+    border-bottom: solid 1px lightgray;
+}
+
+.horizontal-list li {
+    display: inline-block;
+    margin-right: 30px;
+    margin-bottom: 10px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+
+@media only screen  and (max-width: 1000px) {
+
+    h3 {
+        display: none;
+    }
+
+    .nav-menu {
+        display: none;
+    } 
+
+    .bars {
+        color: white;
+        margin: 0;
+        margin-right: 5%;
+        display: block;
+    }
+    .bars i {
+        font-size: 2rem;
+    }
+}
